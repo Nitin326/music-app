@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=PT+Sans&display=swap');
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+/*center the container*/
+.main {
+    background-image: linear-gradient(to top, #a8b8ce 0%, #a8d2f3 100%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 520px;
+    width: 750px;
+}
+/*Album image styling*/
+.poster-img {
+    height: 200px;
+    width: 200px;
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+}
+/*styling for text song name*/
+.song-name {
+    text-align: center;
+    color: rgb(38, 43, 48);
+    margin-top: 10px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.singer-name {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin-top: 3px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 12px;
+}
+/*control button styling*/
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.playpause, .prev-song, .next-song {
+    margin: 20px;
+    opacity: 0.8;
+    transition: opacity .2s;
+}
+
+.playpause:hover, .prev-song:hover, .next-song:hover {
+    opacity: 1.0;
+}
+
+/*track control slider*/
+.slider {
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider .progress-bar{
+    height: 5px;
+    width: 190px;
+    background-color: white;
+}
+
+.slider .progress-bar .progressed{
+    height: 5px;
+    width: 0px;
+    background-color: rgb(211, 102, 102);
+    transition: all 0.5s;
+}
+/*styling for playlist container*/
+.songlist{
+    margin-top: 20px;
+}
+
+.songitem{
+    display: flex;
+    justify-content: space-between;
+    text-align: center; 
+    background-color: rgb(185, 147, 90);  
+    border-radius: 50px;
+}
+/*for playlist image*/
+.avtar{
+    width: 40px;
+    height:40px;
+    border-radius: 50%;
+    padding: 9px;
+}
+
+.songitem .listsongname{
+    font-size: 15px;
+    color: black;
+    padding-top: 3px;
+}
+
+.songitem .icon{
+      font-size: 20px;
+      padding: 9px;
+      cursor: pointer;
+}
